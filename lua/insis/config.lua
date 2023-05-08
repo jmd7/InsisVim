@@ -1,5 +1,5 @@
 ---@class UserConfig
----@field colorscheme "tokyonight" | "nord" | "onedark" | "gruvbox" | "nightfox" | "nordfox" | "duskfox" | "dracula" builtin colorscheme
+---@field colorscheme "sonokai" | "tokyonight" | "nord" | "onedark" | "gruvbox" | "nightfox" | "nordfox" | "duskfox" | "dracula" builtin colorscheme
 ---@field lock_plugin_commit boolean lock plugin commit snapshots by default for stability
 ---@field max_highlight_line_count number disable code hightlight on big file for performance default 10000
 ---@field enable_imselect boolean auto switch your input method, default false  ---@see https://github.com/daipeihust/im-select
@@ -39,7 +39,7 @@
 
 local UserConfig = {
 
-  colorscheme = "tokyonight",
+  colorscheme = "sonokai",
   lock_plugin_commit = true,
   max_highlight_line_count = 10000,
   enable_imselect = false,
@@ -345,7 +345,7 @@ local UserConfig = {
 
   ---@class FrontendConfig
   frontend = {
-    enable = false,
+    enable = true,
     linter = "eslint_d",
     ---@type "eslint_d" | "prettier"
     formatter = "prettier",
@@ -434,7 +434,7 @@ local UserConfig = {
 
   ---@class JsonConfig
   json = {
-    enable = false,
+    enable = true,
     lsp = "jsonls",
     -- npm install -g fixjson
     ---@type "fixjson" | "prettier"

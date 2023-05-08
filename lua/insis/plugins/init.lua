@@ -226,6 +226,9 @@ return {
 
   { "Mofiqul/dracula.nvim" },
 
+  -- sonokai
+  { "sainnhe/sonokai" },
+
   --------------------- git ---------------------------------------------------
 
   {
