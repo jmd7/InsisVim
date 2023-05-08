@@ -36,6 +36,7 @@
 ---@field docker DockerConfig Docker user config
 ---@field git GitConfig git user config
 ---@field mirror MirrorConfig mirror config
+---@field csharp CsharpConfig csharp config
 
 local UserConfig = {
 
@@ -498,6 +499,16 @@ local UserConfig = {
     packer = "https://github.com/",
     -- TODO: LSP DAP mirror config
     -- carefully change these value
+  },
+
+  ------------- CSharp ------------------
+  ---@class CsharpConfig
+  csharp = {
+    enable = true,
+    lsp = "csharp_ls",
+    -- linter = "semgrep",
+    formatter = "clang-format",
+    format_on_save = false,
   },
 }
 

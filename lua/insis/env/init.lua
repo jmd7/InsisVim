@@ -49,6 +49,9 @@ local init = function(userConfig)
   if userConfig.docker.enable then
     table.insert(enabledEnv, require("insis.env.docker")(userConfig.docker))
   end
+  if userConfig.csharp.enable then
+    table.insert(enabledEnv, require("insis.env.csharp")(userConfig.csharp))
+  end
 end
 
 -- loop through enabledEnv list and call envFunc on each Env file

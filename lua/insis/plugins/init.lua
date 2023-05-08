@@ -184,6 +184,9 @@ return {
   -- UI improvement
   { "onsails/lspkind-nvim" },
 
+  -- csharpls-extended-lsp
+  { "Decodetalkers/csharpls-extended-lsp.nvim" },
+
   ------------------ Code formatter -------------------------------------------
 
   -- { "mhartington/formatter.nvim" },
