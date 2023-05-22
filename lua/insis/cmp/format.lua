@@ -46,6 +46,39 @@ lspkind.init({
   },
 })
 
+local lspsaga = pRequire("lspsaga")
+if not lspsaga then
+  return
+end
+
+lspsaga.setup({
+  preview = {
+    lines_above = 0,
+    lines_below = 10,
+  },
+  scroll_preview = {
+    scroll_down = "<C-f>",
+    scroll_up = "<C-b>",
+  },
+  request_timeout = 10000,
+  ui = {
+    -- This option only works in Neovim 0.9
+    title = true,
+    -- Border type can be single, double, rounded, solid, shadow.
+    border = "rounded",
+    winblend = 0,
+    expand = "",
+    collapse = "",
+    code_action = "💡",
+    incoming = " ",
+    outgoing = " ",
+    hover = " ",
+    kind = {},
+  },
+  finder = {},
+  code_action = {},
+})
+
 local M = {}
 M.formatting = {
   format = lspkind.cmp_format({

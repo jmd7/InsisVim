@@ -184,6 +184,14 @@ return {
   -- UI improvement
   { "onsails/lspkind-nvim" },
 
+  {
+    "glepnir/lspsaga.nvim",
+    requires = {
+      { "nvim-tree/nvim-web-devicons" },
+      { "nvim-treesitter/nvim-treesitter" },
+    },
+  },
+
   ------------------ Code formatter -------------------------------------------
 
   -- { "mhartington/formatter.nvim" },

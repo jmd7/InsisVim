@@ -295,6 +295,10 @@ local UserConfig = {
     implementation = "gi",
     -- lists all the references to the symbol
     references = "gr",
+    -- Go to type definition
+    typedefinition = "gt",
+    -- Toggle outline
+    outline = "go",
 
     rename = "<leader>rn",
     code_action = "<leader>ca",
@@ -444,7 +448,7 @@ local UserConfig = {
 
   ---@class MarkdownConfig
   markdown = {
-    enable = false,
+    enable = true,
     mkdnflow = {
       next_link = "gn",
       prev_link = "gp",
